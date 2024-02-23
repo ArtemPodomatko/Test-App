@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/image_cardView"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="@drawable/gradient_background"
+            android:src="@drawable/no_image_newww"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="10dp"
+            android:textSize="15sp"
+            tools:text="gfjnfgnfklmgfkmlg gklfmglkf mlkgm flkgmfl mglkfmgflkmgflkm glkfmgfkgmflkm glfkmgfkmgflkmgflkm gflkmgflkgm mgflgmf"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
